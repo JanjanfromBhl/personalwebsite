@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | John Mark Tajuda</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">John Mark Tajuda</div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="skills-section">
+      <div class="container">
+        <h1>My Skills</h1>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h2>Programming</h2>
+            <p>Proficient in HTML, CSS, JavaScript, and basic Python. I enjoy experimenting with code and learning new programming languages.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h2>Web Development</h2>
+            <p>Experience creating simple web pages, responsive layouts, and small classroom-level projects. Focused on clean design and usability.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🧩</div>
+            <h2>Problem-Solving</h2>
+            <p>Strong analytical skills, troubleshooting, and learning by doing. Enjoy breaking down challenges and finding practical solutions.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🛠️</div>
+            <h2>Tools & Software</h2>
+            <p>Familiar with VS Code, Git, MS Office, and basic database management. Always exploring new tools to improve productivity.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 John Mark Tajuda. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== JS FOR MOBILE MENU ===== -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

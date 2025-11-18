@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | John Mark Tajuda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">John Mark Tajuda</div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active contact-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <p class="intro">Feel free to reach out for questions, collaborations, or just to say hi!</p>
+
+        <div class="contact-info">
+          <div class="contact-card">
+            <h2>Email</h2>
+            <p><a href="mailto:tajudajan@gmail.com">tajudajan@gmail.com</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h2>Phone</h2>
+            <p><a href="tel:+639707585365">0970-758-5365</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h2>Social</h2>
+            <p>
+              <a href="#" target="_blank">LinkedIn</a> |
+              <a href="#" target="_blank">GitHub</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- ===== CONTACT FORM ===== -->
+        <div class="contact-form">
+          <h2>Send a Message</h2>
+          <form id="messageForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 John Mark Tajuda. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script>
+    const form = document.getElementById('messageForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      alert(`Thank you, ${name}! Your message has been sent.\n\nMessage:\n${message}\n\nWe will contact you at ${email}.`);
+
+      // Clear form after sending
+      form.reset();
+    });
+  </script>
+
+</body>
+
+</html>

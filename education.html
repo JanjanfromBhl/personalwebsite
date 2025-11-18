@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | John Mark Tajuda</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">John Mark Tajuda</div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="education-section">
+      <div class="container">
+        <h1>My Education</h1>
+        <div class="timeline">
+
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-details">
+              <h2>Sacaon Elementary School</h2>
+              <span>2009 - 2015</span>
+              <p>Completed Elementary Education with strong foundational skills in Math, Science, and English.</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-details">
+              <h2>Garcia-Hernandez High School</h2>
+              <span>2015 - 2019</span>
+              <p>Completed High School Education, actively participated in tech clubs and school projects.</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">💻</div>
+            <div class="edu-details">
+              <h2>Holy Name University (HNU)</h2>
+              <span>2019 - Present</span>
+              <p>Currently 2nd Year, Bachelor of Science in Information Technology (BS IT). Focused on coding, networking, and IT project development.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 John Mark Tajuda. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== JS FOR MOBILE MENU ===== -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

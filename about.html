@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | John Mark Tajuda</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">John Mark Tajuda</div>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <section class="about-section">
+            <div class="about-container container">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>Hello! I'm <strong>John Mark Tajuda</strong>, a computer and coffee nerd who loves exploring tech
+                        while sipping a good cup of brew. I'm currently studying IT and continuously learning new
+                        things—whether it’s coding, troubleshooting, or experimenting with simple projects.</p>
+                    <p>I enjoy creating small but meaningful outputs, especially classroom-level projects that help me
+                        sharpen my skills. My goal is to grow as a future IT professional who builds practical, helpful,
+                        and user-friendly solutions.</p>
+                </div>
+                <div class="about-image">
+                    <img src="tajuda.jpeg" alt="John Mark Tajuda">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 John Mark Tajuda. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ===== JS FOR MOBILE MENU ===== -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

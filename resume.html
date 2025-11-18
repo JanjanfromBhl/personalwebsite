@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | John Mark Tajuda</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">John Mark Tajuda</div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <section class="resume-section">
+      <div class="container">
+        <h1>John Mark Tajuda</h1>
+        <p class="bio">A computer and coffee nerd currently studying BS Information Technology (2nd Year) at Holy Name University. Passionate about coding, web development, and small practical projects.</p>
+
+        <!-- ===== DOWNLOAD BUTTON ===== -->
+        <div class="download-btn-container">
+          <a href="tajuda.pdf" download class="btn-primary">Download Resume</a>
+        </div>
+
+        <!-- ===== EDUCATION ===== -->
+        <div class="resume-card">
+          <div class="resume-icon">🎓</div>
+          <h2>Education</h2>
+          <ul>
+            <li><strong>Sacaon Elementary School:</strong> Completed Elementary Education</li>
+            <li><strong>Garcia-Hernandez High School:</strong> Completed High School Education</li>
+            <li><strong>Holy Name University (HNU):</strong> 2nd Year BS IT (Currently studying)</li>
+          </ul>
+        </div>
+
+        <!-- ===== SKILLS ===== -->
+        <div class="resume-card">
+          <div class="resume-icon">💻</div>
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML, CSS, JavaScript, Python (basic)</li>
+            <li>Web development and responsive layouts</li>
+            <li>Problem-solving and analytical thinking</li>
+            <li>VS Code, Git, MS Office</li>
+          </ul>
+        </div>
+
+        <!-- ===== PROJECTS ===== -->
+        <div class="resume-card">
+          <div class="resume-icon">📁</div>
+          <h2>Projects</h2>
+          <ul>
+            <li>Simple Portfolio Website (HTML/CSS)</li>
+            <li>To-Do List App (JavaScript)</li>
+            <li>Basic Calculator (HTML/CSS/JS)</li>
+            <li>Classroom Quiz App (JavaScript)</li>
+          </ul>
+        </div>
+
+        <!-- ===== CONTACT ===== -->
+        <div class="resume-card">
+          <div class="resume-icon">✉️</div>
+          <h2>Contact</h2>
+          <ul>
+            <li>Email: <a href="mailto:tajudajan@gmail.com">tajudajan@gmail.com</a></li>
+            <li>Phone: <a href="tel:+639707585365">0970-758-5365</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 John Mark Tajuda. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== JS FOR MOBILE MENU ===== -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
